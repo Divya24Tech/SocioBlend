@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ( SocioBlend )Responsive Social Media Website</title>
+    <!----------------CUSTOM CSS LINK--------------->
+    <link rel="stylesheet" href="./Assets/Style.css">
+    <!-------------------Font Awesome Link-------------------->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!------------- swiper slider link --------->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+    <!-------------START  Navbar------------------->
+    <nav>
+
+        <div class="container nav-container">
+            <div class="logo">
+                <h3>Socio<span>Blend</span></h3>
+            </div>
+     <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="search" placeholder="Search for Creators">
+     </div>
+     <div class="add-post">
+        <label for="add-post" class="btn btn-primary mini-button">Add Post</label>
+        <div class="profile-picture" id="my-profile-picture">
+            <img src="./Assets/Images/img/profile-4.jpg" alt="">
+        </div>
+     </div>
+        </div>
+    </nav>
+
+  <!----------------------START  Navbar-------------------->
+
+     <!------------------START  Main Section-------------------->
+    <main>
+
+        <div class="container main-container">
+
+                <!------========================  Main left start =======================------>
+                <div class="main-left">
+
+
+                    <!-----------profile start--------------->
+                    <a  class="profile">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="./Assets/Images/img/profile-4.jpg" alt="">
+                        </div>
+                        <div class="profile-handle">
+
+                            <h4>Jennifer</h4>
+                            <p class="text-gray">
+                                @thejennifer
+                            </p>
+                        </div>
+                    </a>
+                    <!-----------profile end--------------->
+
+
+
+                <!-------------start Aside Bar-------------->
+                <aside>
+                    <a class="menu-item active">
+                        <span><img src="./Assets/Images/svg/house-door.svg" alt=""></span><h3>Home</h3>
+                    </a>
+                
+                    <a class="menu-item">
+                        <span><img src="./Assets/Images/svg/joystick.svg" alt=""></span><h3>Explore</h3>
+                    </a>
+                    
+                    <a class="menu-item" id="Notify-box">
+                        <span><img src="./Assets/Images/svg/bell.svg" alt=""></span>
+                            <small class="notify-counter nt" id="ntCounter1">7+</small>
+                            <h3>Notifications</h3>
+                        
+                    
+                    
+                    <!----------------notification box start----------------------->
+                    <div class="notification-box">
+                        <div>
+                            <div class="profile-picture">
+                                <img src="./Assets/Images/img/n1.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Julia</b>commented on your post
+                                <small class="text-gray">1 hour ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-picture">
+                                <img src="./Assets/Images/img/s7.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Nick</b> commented on your post
+                                <small class="text-gray">2 hours ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-picture">
+                                <img src="./Assets/Images/img/f4.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Lilly</b> liked your post
+                                <small class="text-gray">just now</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-picture">
+                                <img src="./Assets/Images/img/n4.png" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Ethan</b> and <b>10 others</b> liked your post
+                                <small class="text-gray">1 hour ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-picture">
+                                <img src="./Assets/Images/img/s5.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Mark</b> and <b>5 others</b> commented on your post
+                                <small class="text-gray"> 2 days ago</small>
+                            </div>
+                        </div>   
+                    </div>
+                    <!----------------notification box end----------------------->
+                    </a>
+                    <a class="menu-item" id="messageMenu">
+                        <span><img src="./Assets/Images/svg/chat-left-dots.svg" alt=""></span>
+                            <small class="notify-counter" id="notifyCounter2">3</small>
+                            <h3>Message</h3>
+                        
+                    </a>
+                    
+                    <a class="menu-item" >
+                        <span><img src="./Assets/Images/svg/bookmarks.svg" alt=""></span><h3>Book Marks</h3>
+                    </a>
+                  
+                    <a class="menu-item">
+                        <span><img src="./Assets/Images/svg/graph-up-arrow.svg" alt=""></span><h3>Analytics</h3>
+                    </a>
+                
+                    <a class="menu-item" id="theme">
+                        <span><img src="./Assets/Images/svg/palette.svg" alt=""></span><h3>Theme</h3>
+                    </a>
+                
+                    <a class="menu-item">
+                        <span><img src="./Assets/Images/svg/gear.svg" alt=""></span><h3>Settings</h3>
+                    </a>
+                
+                    <!----------Add post btn ---------------->
+                    <label for="add-post" class="btn btn-primary btn-lg" id="create-lg">Create a Post</label>
+                </aside>
+                
+                <!-------------end Aside Bar-------------->
+                </div>
+                <!--============================  Main left end =============================-------------------->
+
+
+
+
+                <!-----============  Main middle start  ===============------->
+                <div class="main-middle">
+                            <!-------- start stories------->
+                            <div class="middle-container">
+                                <div class="stories">
+                                    <div class="stories-wrapper swiper myswiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="story swiper-slide">
+                                                <img src="" alt="">
+                                                <div class="profile-picture" id="my-profile-picture">
+                                                    <img src="./Assets/Images/img/profile-4.jpg" alt="">
+                                                </div>
+                                                    <label  for="add-story" class="add-story">
+                                                        <i class="fa fa-add" id="upload">
+                                                           
+                                                            
+                                                        </i>
+                                                        <p>Add Your <br> Story</p>
+                                                    </label>
+                                                    <input type="file" accept="image/jpg, image/png, image/jpeg " id="add-story">
+                                            </div>
+    
+    
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st2.jpeg" alt="">
+                                                <div class="profile-picture" >
+                                                    <img src="./Assets/Images/img/s2.jpg" alt="">
+                                                </div>
+                                                <p>Lana White</p>
+                                            </div>
+    
+                                            
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st4.jpg" alt="">
+                                                <div class="profile-picture">
+                                                    <img src="./Assets/Images/img/s5.jpg" alt="">
+                                                </div>
+                                                <p>Mark</p>
+                                            </div>
+    
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/n3.png" alt="">
+                                                <div class="profile-picture">
+                                                    <img src="./Assets/Images/img/s8 (1).png" alt="">
+                                                </div>
+                                                <p>Riya</p>
+                                            </div>
+                              
+    
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st3.jpg" alt="">
+                                                <div class="profile-picture" >
+                                                    <img src="./Assets/Images/img/s3.jpg" alt="">
+                                                </div>
+                                                <p>Krish</p>
+                                            </div>
+    
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st6.jpg" alt="">
+                                                <div class="profile-picture" >
+                                                    <img src="./Assets/Images/img/s7.jpg" alt="">
+                                                </div>
+                                                <p>Nick</p>
+                                            </div>
+    
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st5.jpg" alt="">
+                                                <div class="profile-picture">
+                                                    <img src="./Assets/Images/img/s4.jpg" alt="">
+                                                </div>
+                                                <p>Lisa</p>
+                                            </div>
+                                            <div class="story swiper-slide">
+                                                <img src="./Assets/Images/img/st1.jpg" alt="">
+                                                <div class="profile-picture" >
+                                                    <img src="./Assets/Images/img/s1.jpg" alt="">
+                                                </div>
+                                                <p>John</p>
+                                            </div>
+                                    
+                                           
+                                          
+    
+                                        </div>
+                                           
+    
+                                    </div>
+                            </div>
+    
+    
+                                <!--------------------POST input----------------->
+                                <form class="add-post input-post">
+                                    <div class="profile-picture" id="my-profile-picture">
+    
+                                         <img src="./Assets/Images/img/profile-4.jpg" alt="">   
+                                
+                                    </div>
+                                    <input type="text" placeholder="What's on your mind?" id="add-post">
+                                    <input type="submit" value="post" class="btn btn-primary">
+                                         
+                                </form>
+
+
+                                <!---------------------- Feed Area Start ------------------------->
+
+                                <div class="feeds">
+                                    <div class="feed">
+                                        <!--------- feed top --------->
+                                        <div class="feed-top">
+                                            <div class="user">
+                                                <div class="profile-picture" id="my-profile-picture">
+                                                    <img src="./Assets/Images/img/profile-4.jpg" alt="">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>Jennifer</h3>
+                                                    <div class="time text-gray">
+                                                          <small>India, <span>JUST NOW</span> </small>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="edit">
+                                                <img src="./Assets/Images/svg/three-dots.svg" alt="">
+                                                    <ul class="edit-menu">
+                                                        <li><i class="fa fa-pen"></i>Edit</li>
+                                                        <li><i class="fa fa-trash"></i>Delete</li>
+                                                    </ul>
+                                            </span>
+
+                                        </div>
+                                        <!------feed img---------------->
+
+                                        <div class="feed-img">
+                                            <img src="./Assets/Images/img/tiger-2535888__480.jpg" alt="">
+                                        </div>
+                                        <!---------feed action area---------->
+
+                                        <div class="action-button">
+                                                <div class="interaction-button">
+                                                   <span><i class="fa fa-heart"></i></span> 
+                                                   <span><i class="fa fa-comment-dots"></i></span> 
+                                                   <span><i class="fa fa-link"></i></span> 
+                                                </div>
+                                                <div class="bookmark">
+                                                    <i class="fa fa-bookmark"></i>
+
+                                                </div>
+                                                
+
+
+                                        </div>
+
+                                        <!----------  liked by -------------->
+
+                                        <div class="liked-by">
+                                            <span>
+                                                <img src="./Assets/Images/img/s4.jpg" alt="">
+                                            </span>
+
+                                            <span>
+                                                <img src="./Assets/Images/img/f2.jpg" alt="">
+                                            </span>
+
+                                            <span>
+                                                <img src="./Assets/Images/img/f3.jpg" alt="">
+                                            </span>
+
+                                            <p><b>Rina</b> and <b>1 comment </b></p>
+                                        </div>
+
+
+                                        <!----------caption----------->
+
+                                        <div class="caption">
+                                            <div class="title"> Wild Adventure</div>
+                                            <p><b>John</b> "Lost in the wild, found in the moment."
+                                            <span class="hash-tag">#WildCapture</span></p>
+                                        </div>
+
+
+                                        <!------- comments------->
+                                        <div class="comments test-gray">
+
+                                            View all comments
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="feed">
+                                            <!--------- feed top --------->
+                                            <div class="feed-top">
+                                                <div class="user">
+                                                    <div class="profile-picture">
+                                                        <img src="./Assets/Images/img/s9 (2).png" alt="">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3>Alexa</h3>
+                                                        <div class="time text-gray">
+                                                              <small> Korea, <span>2 hours ago</span> </small>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="edit">
+                                                    <img src="./Assets/Images/svg/three-dots.svg" alt="">
+
+                                                </span>
+
+                                            </div>
+                                            <!------feed img---------------->
+
+                                            <div class="feed-img">
+                                                <div class="tile">
+                                                    <h2> <br> Hello World, <br>I'm Alexa from Korea</h2>
+                                                
+                                                </div>
+                                              
+                                            </div>
+                                            <!---------feed action area---------->
+
+                                            <div class="action-button">
+                                                    <div class="interaction-button">
+                                                       <span><i class="fa fa-heart"></i></span> 
+                                                       <span><i class="fa fa-comment-dots"></i></span> 
+                                                       <span><i class="fa fa-link"></i></span> 
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <i class="fa fa-bookmark"></i>
+
+                                                    </div>
+
+
+                                            </div>
+
+                                            <!----------  liked by -------------->
+
+                                            <div class="liked-by">
+                                                <span>
+                                                    <img src="./Assets/Images/img/n3.png" alt="">
+                                                </span>
+
+                                                <span>
+                                                    <img src="./Assets/Images/img/n1.jpg" alt="">
+                                                </span>
+
+                                                <span>
+                                                    <img src="./Assets/Images/img/n4.png" alt="">
+                                                </span>
+
+                                                <p>liked by<b>Rubi </b> and <b>24 other comments </b></p>
+                                            </div>
+
+
+                                            <!----------caption----------->
+
+                                            <div class="caption">
+
+                                                <p><b>Leo</b> "Hey there! 👋"
+                                                <span class="hash-tag">#HeyThere</span></p>
+                                            </div>
+
+
+                                            <!------- comments------->
+                                            <div class="comments test-gray">
+
+                                                View all comments
+                                            </div>
+
+
+
+                                    </div>
+
+                                    <div class="feed">
+                                        <!--------- feed top --------->
+                                        <div class="feed-top">
+                                            <div class="user">
+                                                <div class="profile-picture">
+                                                    <img src="./Assets/Images/img/s9 (1).png" alt="">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>Robert</h3>
+                                                    <div class="time text-gray">
+                                                          <small>  US, <span>1 day ago</span> </small>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="edit">
+                                                <img src="./Assets/Images/svg/three-dots.svg" alt="">
+                                                    
+                                            </span>
+
+                                        </div>
+                                        <!------feed img---------------->
+
+                                        <div class="feed-img">
+                                            <img src="./Assets/Images/img/feed3.png" alt="">
+                                        </div>
+                                        <!---------feed action area---------->
+
+                                        <div class="action-button">
+                                                <div class="interaction-button">
+                                                   <span><i class="fa fa-heart"></i></span> 
+                                                   <span><i class="fa fa-comment-dots"></i></span> 
+                                                   <span><i class="fa fa-link"></i></span> 
+                                                </div>
+                                                <div class="bookmark">
+                                                    <i class="fa fa-bookmark"></i>
+
+                                                </div>
+                                                
+
+
+                                        </div>
+
+                                        <!----------  liked by -------------->
+
+                                        <div class="liked-by">
+                                            <span>
+                                                <img src="./Assets/Images/img/st9.png" alt="">
+                                            </span>
+
+                                            <span>
+                                                <img src="./Assets/Images/img/st6.jpg" alt="">
+                                            </span>
+
+                                            <span>
+                                                <img src="./Assets/Images/img/st2.jpeg" alt="">
+                                            </span>
+
+                                            <p><b>Williams</b> and <b>77 comments  other</b></p>
+                                        </div>
+
+
+                                        <!----------caption----------->
+
+                                        <div class="caption">
+                                            <div class="title">Work Hard and Be Kind</div>
+                                            <p><b>Tony</b> Every task completed with care is a step toward mastery... 
+                                            <span class="hash-tag">#WellExecuted</span></p>
+                                        </div>
+
+
+                                        <!------- comments------->
+                                        <div class="comments test-gray">
+
+                                            View all comments
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="feed">
+                                    <!--------- feed top --------->
+                                    <div class="feed-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./Assets/Images/img/f2.jpg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Kiara</h3>
+                                                <div class="time text-gray">
+                                                      <small>  France, <span>1 day ago</span> </small>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="edit">
+                                            <img src="./Assets/Images/svg/three-dots.svg" alt="">
+
+                                        </span>
+
+                                    </div>
+                                    <!------feed img---------------->
+
+                                    <div class="feed-img">
+                                        <img src="./Assets/Images/img/feed4.jpg" alt="">
+                                    </div>
+                                    <!---------feed action area---------->
+
+                                    <div class="action-button">
+                                            <div class="interaction-button">
+                                               <span><i class="fa fa-heart"></i></span> 
+                                               <span><i class="fa fa-comment-dots"></i></span> 
+                                               <span><i class="fa fa-link"></i></span> 
+                                            </div>
+                                            <div class="bookmark">
+                                                <i class="fa fa-bookmark"></i>
+
+                                            </div>
+                                            
+
+
+                                    </div>
+
+                                    <!----------  liked by -------------->
+
+                                    <div class="liked-by">
+                                        <span>
+                                            <img src="./Assets/Images/img/n2.png" alt="">
+                                        </span>
+
+                                        <span>
+                                            <img src="./Assets/Images/img/n5.png" alt="">
+                                        </span>
+
+                                        <span>
+                                            <img src="./Assets/Images/img/n4.png" alt="">
+                                        </span>
+
+                                        <p><b>Selena</b> and <b>34  other comments</b></p>
+                                    </div>
+
+
+                                    <!----------caption----------->
+
+                                    <div class="caption">
+                                        <div class="title">"Sunshine in my soul 🌞"</div>
+                                        <p><b>Ria</b>Shine Bright
+                                        <span class="hash-tag">#SoulSpark</span></p>
+                                    </div>
+
+
+                                    <!------- comments------->
+                                    <div class="comments test-gray">
+
+                                        View all comments
+                                    </div>
+
+
+
+                                            </div>
+                                            <div class="feed">
+                                                <!--------- feed top --------->
+                                                <div class="feed-top">
+                                                    <div class="user">
+                                                        <div class="profile-picture">
+                                                            <img src="./Assets/Images/img/m5.jpg" alt="">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>Noah</h3>
+                                                            <div class="time text-gray">
+                                                                  <small>Africa, <span>2 days ago</span> </small>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="edit">
+                                                        <img src="./Assets/Images/svg/three-dots.svg" alt="">
+        
+                                                    </span>
+        
+                                                </div>
+                                                <!------feed img---------------->
+        
+                                                <div class="feed-img">
+                                                    <img src="./Assets/Images/img/feed2.jpg" alt="">
+                                                </div>
+                                                <!---------feed action area---------->
+        
+                                                <div class="action-button">
+                                                        <div class="interaction-button">
+                                                           <span><i class="fa fa-heart"></i></span> 
+                                                           <span><i class="fa fa-comment-dots"></i></span> 
+                                                           <span><i class="fa fa-link"></i></span> 
+                                                        </div>
+                                                        <div class="bookmark">
+                                                            <i class="fa fa-bookmark"></i>
+        
+                                                        </div>
+                                                        
+        
+        
+                                                </div>
+        
+                                                <!----------  liked by -------------->
+        
+                                                <div class="liked-by">
+                                                    <span>
+                                                        <img src="./Assets/Images/img/m1.jpg" alt="">
+                                                    </span>
+        
+                                                    <span>
+                                                        <img src="./Assets/Images/img/n2.png" alt="">
+                                                    </span>
+        
+                                                    <span>
+                                                        <img src="./Assets/Images/img/n1.jpg" alt="">
+                                                    </span>
+        
+                                                    <p><b>Daniel</b> and <b>54 other comments</b></p>
+                                                </div>
+        
+        
+                                                <!----------caption----------->
+        
+                                                <div class="caption">
+                                                    <div class="title">"Little whiskers, big smiles." </div>
+                                                    <p><b>Glira</b>  so cute buddy 
+                                                    <span class="hash-tag">#LittleCharmer</span></p>
+                                                </div>
+        
+        
+                                                <!------- comments------->
+                                                <div class="comments test-gray">
+        
+                                                    View all comments
+                                                </div>
+        
+        
+        
+                                        </div>
+                                        <div class="feed myfeed">
+                                            <!--------- feed top --------->
+                                            <div class="feed-top">
+                                                <div class="user">
+                                                    <div class="profile-picture" id="my-profile-picture">
+                                                        <img src="./Assets/Images/img/profile-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3>Jennifer</h3>
+                                                        <div class="time text-gray">
+                                                              <small>India, <span>1 day ago</span> </small>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="edit">
+                                                    <img src="./Assets/Images/svg/three-dots.svg" alt="">
+                                                        <ul class="edit-menu">
+                                                            <li><i class="fa fa-pen"></i>Edit</li>
+                                                            <li><i class="fa fa-trash"></i>Delete</li>
+                                                        </ul>
+                                                </span>
+    
+                                            </div>
+                                            <!------feed img---------------->
+    
+                                            <div class="feed-img">
+                                                <img src="./Assets/Images/img/m2.png" alt="">
+                                            </div>
+                                            <!---------feed action area---------->
+    
+                                            <div class="action-button">
+                                                    <div class="interaction-button">
+                                                       <span><i class="fa fa-heart"></i></span> 
+                                                       <span><i class="fa fa-comment-dots"></i></span> 
+                                                       <span><i class="fa fa-link"></i></span> 
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <i class="fa fa-bookmark"></i>
+    
+                                                    </div>
+                                                    
+    
+    
+                                            </div>
+    
+                                            <!----------  liked by -------------->
+    
+                                            <div class="liked-by">
+                                                <span>
+                                                    <img src="./Assets/Images/img/s5.jpg" alt="">
+                                                </span>
+    
+                                                <span>
+                                                    <img src="./Assets/Images/img/m5.jpg" alt="">
+                                                </span>
+    
+                                                <span>
+                                                    <img src="./Assets/Images/img/n1.jpg" alt="">
+                                                </span>
+    
+                                                <p><b>Sam</b> and <b>12 comment </b></p>
+                                            </div>
+    
+    
+                                            <!----------caption----------->
+    
+                                            <div class="caption">
+                                                <div class="title"> Happiest Birthday</div>
+                                                <p><b>John</b> Bithday Wishes from here
+                                                <span class="hash-tag">#Birthday</span></p>
+                                            </div>
+    
+    
+                                            <!------- comments------->
+                                            <div class="comments test-gray">
+    
+                                                View all comments
+                                            </div>
+    
+    
+    
+                                        </div>
+
+                                        <div class="feed">
+                                            <!--------- feed top --------->
+                                            <div class="feed-top">
+                                                <div class="user">
+                                                    <div class="profile-picture">
+                                                        <img src="./Assets/Images/img/m (7).png" alt="">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3>Luna</h3>
+                                                        <div class="time text-gray">
+                                                              <small>New York, <span>3 days ago</span> </small>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="edit">
+                                                    <img src="./Assets/Images/svg/three-dots.svg" alt="">
+    
+                                                </span>
+    
+                                            </div>
+                                            <!------feed img---------------->
+    
+                                            <div class="feed-img">
+                                                <img src="./Assets/Images/img/feed6.png" alt="">
+                                            </div>
+                                            <!---------feed action area---------->
+    
+                                            <div class="action-button">
+                                                    <div class="interaction-button">
+                                                       <span><i class="fa fa-heart"></i></span> 
+                                                       <span><i class="fa fa-comment-dots"></i></span> 
+                                                       <span><i class="fa fa-link"></i></span> 
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <i class="fa fa-bookmark"></i>
+    
+                                                    </div>
+                                                    
+    
+    
+                                            </div>
+    
+                                            <!----------  liked by -------------->
+    
+                                            <div class="liked-by">
+                                                <span>
+                                                    <img src="./Assets/Images/img/s6.jpg" alt="">
+                                                </span>
+    
+                                                <span>
+                                                    <img src="./Assets/Images/img/s8 (1).png" alt="">
+                                                </span>
+    
+                                                <span>
+                                                    <img src="./Assets/Images/img/f4.jpg" alt="">
+                                                </span>
+    
+                                                <p><b>Olive</b> and <b>14 other comments</b></p>
+                                            </div>
+    
+    
+                                            <!----------caption----------->
+    
+                                            <div class="caption">
+                                                <div class="title">"Little adventurers, big smiles."</div>
+                                                <p><b>Gloria</b> have a fun day 
+                                                <span class="hash-tag">#HappyExplorers</span></p>
+                                            </div>
+    
+    
+                                            <!------- comments------->
+                                            <div class="comments test-gray">
+    
+                                                View all comments
+                                            </div>
+    
+    
+    
+                                    </div>
+                                    
+                                </div>
+                                <!------------------ Feed Area End --------------->
+
+                            </div>
+                  
+                            <!-------- end stories------->
+                </div>
+                <!----======================== Main middle end =========================---->
+
+
+
+
+                <!--==============================  Main right start   ===========================------------>
+                <div class="main-right">
+                    <!---- start message------>
+
+
+                        <div class="messages">
+                            <!-----------message top  ------->
+                                <div class="message-top">
+                                    <h4>Message</h4> <i class="fa fa-edit"></i>
+                                </div>
+                                <!-----......searchbar ... ----->
+                                    <div class="message-search-bar">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" placeholder="Search message" id="message-search">
+                                    </div>
+                                <!-----......message categories ... ----->
+                                <div class="message-categories">
+                                    <h6 class="active"> Primary </h6>
+                                    <h6> General </h6>
+                                    <h6 class="message-request"> Request(5) </h6>
+                                </div>
+                                <!-----......message ... ----->
+                                <div class="message">
+                                    <div class="profile-picture">
+                                        <img src="./Assets/Images/img/n1.jpg" alt="">
+                                        <div class="green-active"></div>
+                                    </div>
+
+                                    <div class="message-body">
+                                        <h5>Julia</h5>
+                                        <p class="text-gray">
+                                            Hey, How was ur day?
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="message">
+                                    <div class="profile-picture">
+                                        <img src="./Assets/Images/img/n4.png" alt="">
+                                        <div class="green-active"></div>
+                                    </div>
+
+                                    <div class="message-body">
+                                        <h5>Ethan</h5>
+                                        <p class="text-gray">
+                                            Deadline for the project is tomorrow
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="message">
+                                    <div class="profile-picture">
+                                        <img src="./Assets/Images/img/m (7).png" alt="">
+                                        <div class="green-active"></div>
+                                    </div>
+
+                                    <div class="message-body">
+                                        <h5>Luna</h5>
+                                        <p class="text-gray">
+                                            can we go for shopping on coming weekend?
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+                               
+
+
+                        </div>
+
+                        <!---- end message------>
+                        <!---- start first request------>
+
+
+
+
+                            <div class="friend-request">
+                                <h4>Request</h4>
+                                <div class="request">
+                                    <div class="info">
+                                        <div class="profile-picture">
+                                            <img src="./Assets/Images/img/f1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>Mark</h5>
+                                            <p class="text-gray">
+                                                5 mutual friends
+                                            </p>
+                                            <small class="text-gray alert" >You have accepted friend request</small>
+                                          
+                                        </div>
+
+                                    </div>
+                                    <div class="action">
+                                        <div class="btn btn-primary" id="Accept">
+                                            Accept
+                                        </div>
+                                        <div class="btn btn-danger" id="Delete">
+                                            Delete
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="friend-request">
+                                
+                                <div class="request">
+                                    <div class="info">
+                                        <div class="profile-picture">
+                                            <img src="./Assets/Images/img/n5.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>Ram</h5>
+                                            <p class="text-gray">
+                                                3 mutual friends
+                                            </p>
+                                            <small class="text-gray alert" >You have accepted friend request</small>
+                                          
+                                        </div>
+
+                                    </div>
+                                    <div class="action">
+                                        <div class="btn btn-primary" id="Accept">
+                                            Accept
+                                        </div>
+                                        <div class="btn btn-danger" id="Delete">
+                                            Delete
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="friend-request">
+                                
+                                <div class="request">
+                                    <div class="info">
+                                        <div class="profile-picture">
+                                            <img src="./Assets/Images/img/n2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5>Andrew</h5>
+                                            <p class="text-gray">
+                                                1 mutual friend
+                                            </p>
+                                            <small class="text-gray alert" >You have accepted friend request</small>
+                                          
+                                        </div>
+
+                                    </div>
+                                    <div class="action">
+                                        <div class="btn btn-primary" id="Accept">
+                                            Accept
+                                        </div>
+                                        <div class="btn btn-danger" id="Delete">
+                                            Delete
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!---- end first request------>
+                        
+
+                </div>
+                <!---==============================  Main right end ============================-------->
+
+        </div>
+    </main>
+
+<!-------------------START  Main Section-------------------->
+
+
+
+        <!---------------START  popup  area-------------------->
+                <!-------start profile popups------->
+
+                <div class="popup profile-popup">
+                       
+                    <div>
+                        <div class="popup-box profile-popup-box">
+                            <h1>Jennifer</h1>
+                            <p>@thejennifer</p>
+                            <div id="my-profile-picture" >
+                                <img src="./Assets/Images/img/profile-4.jpg" id="">
+                            </div>
+            
+                            
+                            <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile Picture</label>
+                            <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                            <button class="btn btn-primary btn-lg">Log Out</button>
+                        </div>
+                        <span class="close"><i class="fa fa-close"></i></span>
+            
+                    </div>
+                </div>
+                <!-------end profile popups------->
+
+
+
+                    <!-------start Add post popup ------->
+
+                    <div class="popup add-post-popup">
+                        <div>
+                                <form class="popup-box add-post-popup">
+                                    <h1>Add New Post</h1>
+
+                                        <div class="row post-title">
+                                            <label>Title</label>
+                                            <input type="text" placeholder="What's on your mind?" id="add-post">
+                                        </div>
+
+                                        <div class="row post-img">
+                                            
+                                                <img src="" id="postimg">
+                                            
+                            
+                                            
+                                            <label for="feed-pic-upload" class="feed-upload-button">
+                                                <span><i class="fa fa-add"></i></span> Upload a Picture
+                                            </label>
+                                            <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                                            <input type ="submit" class="btn btn-primary btn-lg" value="Add Post">
+                                       
+                                        </div>
+
+
+                                </form>
+                                <span class="close"><i class="fa fa-close"></i></span>
+            
+                        </div>
+
+                    </div>
+                    <!-------end Add post popup ------->
+
+
+
+
+                         <!-------Start Theme customize ------->
+
+
+
+                         <div class="popup theme-customize">
+                            <div>
+                                <div class="popup-box theme-customize-popup-box">
+                                    <h1>Customize Your Theme</h1>
+                                    <p> Manage your font-size, color and Background</p>
+                                    <!----font size-->
+                                    <div class="font-size">
+                                        <h4>Font-Size</h4>
+                                        <div>
+                                            <div>
+                                                <h6>Aa</h6>
+                                             </div>
+                                             <div class="choose-size">
+                                                 <span class="font-size-1"></span>
+                                                 <span class="font-size-2"></span>
+                                                 <span class="font-size-3 active"></span>
+                                                 <span class="font-size-4"></span>
+                                                 <span class="font-size-5"></span>
+                                             </div>
+                                             <div>
+                                                 <h3>Aa</h3>
+                                             </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                            <!------ Primary colors-->
+                                            <div class="colors"> 
+                                                <h4>Color</h4>
+                                                <div class="choose-color">
+                                                    <span class="color-1 active"></span>
+                                                    <span class="color-2 "></span>
+                                                    <span class="color-3 "></span>
+                                                    <span class="color-4 "></span>
+                                                    <span class="color-5 "></span>
+                                                </div>
+                                            </div>
+
+                                            <!------ Background colors-->
+
+                                            <div class="background">
+                                                <h4>Background</h4>
+                                                <div class="choose-bg">
+                                                    <div class="bg1 active">
+                                                        <span></span>
+                                                        <h5 >Light</h5>
+                                                    </div>
+                                                    <div class="bg2">
+                                                        <span></span>
+                                                        <h5>Dark</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                </div>
+                                <span class="close"><i class="fa fa-close"></i></span>
+                            </div>
+
+                         </div>
+                        <!-------end Theme customize ------->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---------------end  popup area -------------------->
+
+
+
+
+
+
+<!--swiper JS link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Custom JS link-->
+    <script src="./Assets/Script.js"></script>
+
+</body>
+</html>
